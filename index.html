@@ -7,6 +7,12 @@
     <title>Document</title>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -31,70 +37,98 @@
           <h3 class="presentation-subtitle">Morgan, AlphaFX Founder & CEO</h3>
         </div>
       </article>
-      <article class="questions_interview">
-        <h2 class="questions_interview_title">
-          Three questions to unlock the interview:
-        </h2>
-        <div class="question_one">
-           <div class="q1">
-               <p>Q1.</p>
-           </div>
-          <div class="wrapper">
-          <label class="question" for="yes_no_radio"> Does a hybrid sales and account management role <br> within the financial markets excite you? </label>
-            <p>
-            <input type="radio" name="yes_no" checked>Yes</input>
-            </p>
-            <p>
-            <input type="radio" name="yes_no">No</input>
-            </p>
-</div>
+      <article class="questions">
+        <h1 >Three questions to <br> unlock the interview: </h1>
+        <div class="q1">
+          <p class="question_number">Q1.</p>
+          <div class="content">
+            <h1>Does a hybrid sales and account management role within the financial markets excite you?</h1>
+         <form >
+         <label class="container">Yes
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">No
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+          </div>
         </div>
-         <div class="question_one">
-           <div class="q1">
-               <p>Q2.</p>
-           </div>
-          <div class="wrapper">
-          <label class="question" for="yes_no_radio"> Would you relish the challenge of being surrounded by ambitious  people within a high-performance environment? </label>
-            <p>
-            <input type="radio" name="yes_no" checked>Yes</input>
-            </p>
-            <p>
-            <input type="radio" name="yes_no">No</input>
-            </p>
-</div>
+         <div class="q2">
+           <img class="q2_image"
+            class="presentation-image"
+            src="./images/women.jpg"
+            alt=""
+          />
+          <p class="question_number">Q2.</p>
+          <div class="content">
+            <h1>Would you relish the challenge of being surrounded by ambitious people within a high-performance environment?</h1>
+
+         <form>
+         <label class="container">Yes
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">No
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        
+        </form>
+          </div>
         </div>
-         <div class="question_one">
-           <div class="q1">
-               <p>Q3.</p>
-           </div>
-          <div class="wrapper">
-          <label class="question" for="yes_no_radio"> Are you at a time in your life where you’re ready to commit to increasing your learning and earning potential? </label>
-            <p>
-            <input type="radio" name="yes_no" checked>Yes</input>
-            </p>
-            <p>
-            <input type="radio" name="yes_no">No</input>
-            </p>
-</div>      
+         <div class="q3">
+          <p class="question_number">Q3.</p>
+          <div class="content">
+            <h1>Are you at a time in your life where you’re ready to commit to increasing your learning and earning potential?</h1>
+         <form>
+         <label class="container">Yes
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">No
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        
+        </form>
+          </div>
         </div>
+         <button class="submit">Submit </button>
+        
+        
          
+        
       </article>
-      <article class="refer-someone">
-       <div class="refer-someone-content">
-          <h2 class="refer_title">Not right for you?</h2>
-          <ul class="refer-list">
-            <li>Refer someone else. </li>
-            <li>We hire them.</li>
-            <li>You get £1,000.</li>
-            <li>Easy as that.</li>
-          </ul>
-   
-<button>Refer someone</button>
+      <article class="refer">
+       <div class="refer_content">
+          <h1>Not right for you?</h1>
+        <ul>
+          <li>Refer someone else.</li>
+          <li>We hire them. </li>
+          <li>You get £1,000.</li>
+          <li>Easy as that.</li>
+  
+        </ul>
+        <a href="">Refer someone</a>
        </div>
-      
- <img class="refer_image" src="./images/lion.jpg" alt="">
+        
       </article>
-      
+      <img class="bottom-image" src="./images/sales-floor.jpg" alt="">
     </main>
+    <footer>
+      <ul>
+        <li>©2022 Alpha FX Group plc</li>
+        <li>Regulatory Info</li>
+        <li>Legal Notice</li>
+        <li>Privacy & Cookies</li>
+        <li>Developer Hub</li>
+        <li>Moder Slavery Statement</li>
+        <li>Fraud Awareness</li>
+        <li>Live Rates</li>
+        <li>Credits</li>
+
+      </ul>
+    </footer>
   </body>
 </html>

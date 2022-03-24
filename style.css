@@ -5,14 +5,9 @@
 }
 body {
   font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 83px;
   background: #000000;
 }
-header {
-}
+
 .office-video {
   width: 100%;
   height: 56vh;
@@ -29,12 +24,13 @@ header {
 }
 
 main {
-  width: 100%;
+  margin: 0 auto;
 }
 
 .presentation {
-  width: 100%;
+  width: 60%;
   color: white;
+  margin: 0 auto;
 }
 
 .presentation-title {
@@ -57,8 +53,8 @@ main {
 }
 
 .presentation-content {
-  width: 60%;
-  margin: 0 auto;
+  border-left: 1px solid #00b8a3;
+  padding-left: 50px;
 }
 
 .presentation-text {
@@ -70,7 +66,6 @@ main {
 }
 .presentation-image {
   width: 100%;
-  margin: 0 auto;
 }
 .presentation-subtitle {
   font-size: 1rem;
@@ -78,88 +73,200 @@ main {
   font-weight: 300;
   line-height: 31px;
 }
-.question {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-.questions_interview {
+
+.questions {
   color: white;
+  padding-top: 3rem;
+  font-size: 1.5rem;
   width: 100%;
-  padding-top: 2rem;
 }
-.questions_interview_title {
-  font-size: 3rem;
+.questions > h1 {
   width: 60%;
   margin: 0 auto;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 71px;
+}
+
+.question_one {
+  display: flex;
+}
+.question_one_title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.q2_image {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 28vh;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.q1 {
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
-.question_one {
-  font-size: 3rem;
-  width: 60%;
-  margin: 0 auto;
-  font-style: normal;
-  font-weight: 300;
-  display: flex;
+.q2 {
+  padding-top: 6rem;
   padding-bottom: 8rem;
 }
-.q1 {
-  margin-right: 1rem;
+.q3 {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+.q1,
+.q2,
+.q3 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.question_number {
   color: #00b8a3;
-  font-family: IBM Plex Sans;
-  font-size: 50px;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 300;
-  /* line-height: 130px; */
+  font-size: 2rem;
+}
+.content {
+  padding-top: 0.9rem;
+  width: 75%;
+  font-size: 1rem;
+}
+.content > h1 {
+  width: 100%;
+}
+
+/* form */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #00b8a3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+form {
+  padding-top: 1.4rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px 10px 70px;
+  margin: 0 auto;
+  color: white;
+  background: #078375;
+  outline: none;
+  border: none;
+
+  font-family: "IBM Plex Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
 }
-.wrapper {
-  font-size: 1rem;
-  line-height: 40px;
-  padding-top: 1.5rem;
-}
-input {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #999;
-  transition: 0.2s all linear;
-  margin-right: 12px;
 
-  position: relative;
-  top: 11px;
-}
-.refer_title {
-  font-size: 1rem;
-}
-.refer-someone {
-  width: 50%;
+.refer {
   color: white;
-  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
   margin: 0 auto;
+  padding-top: 2rem;
 }
-.refer-someone::before {
-  content: "";
-  height: 30px;
-  border: 1px solid #00b8a3;
-  margin-right: 1rem;
-  padding-bottom: 20rem;
+.refer_content {
+  padding-left: 2rem;
+  border-left: 2px solid #078375;
 }
-.refer-someone-content {
-  width: 50%;
-  margin: 0 auto;
+.refer_content > ul {
+  padding-top: 1rem;
+  list-style: none;
 }
-.refer_image {
-  width: 100%;
-  background: black;
+.refer_content > ul > li {
+  padding-top: 0.7rem;
+}
+.refer_content > ul > :nth-child(4) {
+  padding-top: 1rem;
+}
+.refer_content > ul > :nth-child(3) {
+  font-style: italic;
 }
 
-.refer-list {
+.bottom-image {
   width: 100%;
-  margin: 0 auto;
-  font-size: 1rem;
+  padding-top: 3rem;
+}
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.8rem;
+}
+footer > ul {
+  color: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
   list-style: none;
 }
