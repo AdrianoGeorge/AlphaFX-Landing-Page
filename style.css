@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 83px;
+  background: #000000;
+}
+header {
+}
+.office-video {
+  width: 100%;
+  height: 56vh;
+  object-fit: cover;
+}
+.background-letter {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.letter-background {
+  width: 200px;
+  height: 200px;
+}
+
+main {
+  width: 100%;
+}
+
+.presentation {
+  width: 100%;
+  color: white;
+}
+
+.presentation-title {
+  font-size: 1rem;
+  height: 17vh;
+  text-align: center;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: 0em;
+}
+.presentation-title::before {
+  content: "";
+  height: 30px;
+  border: 1px solid #00b8a3;
+  margin-right: 1rem;
+  padding-bottom: 8rem;
+}
+
+.presentation-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.presentation-text {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+.presentation-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.presentation-subtitle {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31px;
+}
+.question {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.questions_interview {
+  color: white;
+  width: 100%;
+  padding-top: 2rem;
+}
+.questions_interview_title {
+  font-size: 3rem;
+  width: 60%;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 71px;
+  padding-bottom: 2rem;
+}
+.question_one {
+  font-size: 3rem;
+  width: 60%;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 300;
+  display: flex;
+  padding-bottom: 8rem;
+}
+.q1 {
+  margin-right: 1rem;
+  color: #00b8a3;
+  font-family: IBM Plex Sans;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  /* line-height: 130px; */
+  letter-spacing: 0em;
+  text-align: left;
+}
+.wrapper {
+  font-size: 1rem;
+  line-height: 40px;
+  padding-top: 1.5rem;
+}
+input {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 12px;
+
+  position: relative;
+  top: 11px;
+}
+.refer_title {
+  font-size: 1rem;
+}
+.refer-someone {
+  width: 50%;
+  color: white;
+  background: black;
+  margin: 0 auto;
+}
+.refer-someone::before {
+  content: "";
+  height: 30px;
+  border: 1px solid #00b8a3;
+  margin-right: 1rem;
+  padding-bottom: 20rem;
+}
+.refer-someone-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.refer_image {
+  width: 100%;
+  background: black;
+}
+
+.refer-list {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+  list-style: none;
+}
