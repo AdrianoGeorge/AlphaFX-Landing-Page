@@ -6,9 +6,11 @@
 :root {
   --form-control-color: #00b8a3;
 }
+
 body {
   font-family: "IBM Plex Sans";
   background: #000000;
+  scroll-behavior: smooth;
 }
 
 .office-video {
@@ -16,7 +18,9 @@ body {
   height: 56vh;
   object-fit: cover;
 }
-.background-letter {
+
+.background-letter,
+.mySVG {
   position: fixed;
   top: 0;
   right: 0;
@@ -239,4 +243,31 @@ footer > ul {
   justify-content: space-between;
   font-size: 0.6rem;
   list-style: none;
+}
+
+/* .progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  width: 0%;
+  z-index: 100;
+  transition: width 0.2s ease-out;
+} */
+::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: rgb(255, 61, 94);
+}
+
+@media screen and (max-width: 768px) {
+  .image img {
+    width: 200px;
+  }
 }
