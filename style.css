@@ -26,7 +26,7 @@ body {
   z-index: 99;
   transform: translateY(-50%);
 }
-
+/* 
 .position-indicator span {
   display: block;
   background-color: #078375;
@@ -34,6 +34,14 @@ body {
   margin-left: auto;
   width: 100px;
   height: 2px;
+} */
+.span1 {
+  display: block;
+  background-color: #078375;
+  margin: 25px 0;
+  margin-left: auto;
+  width: 100px;
+  height: 3px;
 }
 
 /* .position-indicator span.active {
@@ -41,9 +49,22 @@ body {
 } */
 
 .active-span {
-  border: 1px solid red;
-  width: 70px;
+  border: 1px solid #078375;
+
+  width: 250px;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-name: example;
 }
+/* @keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: blue;
+  }
+} */
 /* Header Start */
 .office-video {
   width: 100%;
