@@ -1,139 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <img class="office-video" src="./images/office-video.jpg" alt="" />
-      <div class="background-letter">
-        <img class="letter-background" src="./images/group-letter.jpg" alt="" />
-      </div>
-    </header>
-    <main>
-      <article class="presentation">
-        <h2 class="presentation-title">Scroll to view questions</h2>
-        <div class="presentation-content">
-          <p class="presentation-text">
-            Disrupt an industry – your chance to join one of the fastest-growing
-            companies on the LSE.
-          </p>
-          <img
-            class="presentation-image"
-            src="./images/morgan-still.jpg"
-            alt=""
-          />
-          <h3 class="presentation-subtitle">Morgan, AlphaFX Founder & CEO</h3>
-        </div>
-      </article>
-      <article class="questions">
-        <h1>
-          Three questions to <br />
-          unlock the interview: 
-        </h1>
-        <div class="interview_questions">
-          <p class="question_number">Q1.</p>
-          <form action="">
-            <legend>
-              Does a hybrid sales and account management role within the
-              financial markets excite you?
-            </legend>
-            <label class="form-control">
-              <input type="radio" name="radio" checked />
-              Yes
-            </label>
 
-            <label class="form-control">
-              <input type="radio" name="radio" />
-              No
-            </label>
-          </form>
-          <!-- <form method="post" action="interview_questions">
-        <legend>Would you relish the challenge of being surrounded by ambitious people within a high-performance environment?</legend>
-     
-        <input type="radio" name="yes_no" value="Yes" checked>YES<br>
-        <input type="radio" name="yes_no" value="No">NO<br>
-        <br>
-        </form> -->
-        </div>
-        <div class="interview_questions">
-          <img class="image_question2" src="./images/women.jpg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC">
+
+</head>
+
+<body>
+  <header>
+    <img class="office-video" src="./images/office-video.jpg" alt="" />
+    <div class="background-letter">
+      <img class="letter-background" src="./images/group-letter.jpg" alt="" />
+    </div>
+  </header>
+
+  <main >
+   <div class="position-indicator" id="layoutViewport">
+      <span class="active1 span1" id="bottombar"></span>
+      <span class="active2 span1"></span>
+      <span class="active3 span1"></span>
+   </div>
+    <div id="message" class="value">Please scroll to check if the box is visible</div>
+    <article class="presentation">
+      <h2 class="presentation-title">Scroll to view questions</h2>
+      <div class="presentation-content">
+        <p class="presentation-text">
+          Disrupt an industry – your chance to join one of the fastest-growing
+          companies on the LSE.
+        </p>
+        <img class="presentation-image" src="./images/morgan-still.jpg" alt="" />
+        <h3 class="presentation-subtitle">Morgan, AlphaFX Founder & CEO</h3>
+      </div>
+    </article>
+
+
+    <article class="questions">
+
+      <h1 class="questions_title">
+        Three questions to <br />
+        unlock the interview: 
+      </h1>
+
+      <div class="interview_questions"id="question_one">
+        <p class="question_number">Q1.</p>
+        <!-- <a class="question_number" href="#hydration">Q1.</a> -->
+        
+        <form action="">
+          <legend>
+            Does a hybrid sales and account management role within the
+            financial markets excite you?
+          </legend>
+          <label class="form-control">
+            <input type="radio" id="yes1" name="radio"   />
+            Yes
+          </label>
+
+          <label class="form-control">
+            <input type="radio" name="radio" />
+            No
+          </label>
+        </form>
+      
+      </div>
+
+      <div class="interview_questions2 question_two" id="question_two">
+        <img class="image_question2" src="./images/women.jpg" alt="" />
+     <div class="container_form">
           <p class="question_number">Q2.</p>
 
-          <form action="">
-            <legend>
-              Would you relish the challenge of being surrounded by ambitious
-              people within a high-performance environment?
-            </legend>
-            <label class="form-control">
-              <input type="radio" name="radio" checked />
-              Yes
-            </label>
+        <form action="">
+          <legend>
+            Would you relish the challenge of being surrounded by ambitious
+            people within a high-performance environment?
+          </legend>
+          <label class="form-control">
+            <input type="radio"  id="yes2" name="radio"  />
+            Yes
+          </label>
 
-            <label class="form-control">
-              <input type="radio" name="radio" />
-              No
-            </label>
-          </form>
-        </div>
-        <div class="interview_questions">
-          <p class="question_number">Q3.</p>
+          <label class="form-control">
+            <input type="radio" name="radio" />
+            No
+          </label>
+        </form>
 
-          <form action="">
-            <legend>
-              Are you at a time in your life where you’re ready to commit to
-              increasing your learning and earning potential?
-            </legend>
-            <label class="form-control">
-              <input type="radio" name="radio" checked />
-              Yes
-            </label>
+     </div>
+      </div>
 
-            <label class="form-control">
-              <input type="radio" name="radio" />
-              No
-            </label>
-          </form>
-        </div>
-      </article>
+      <div class="interview_questions " id="question_three">
+        <p class="question_number">Q3.</p>
 
-      <article class="refer">
-        <div class="refer_content">
-          <h1>Not right for you?</h1>
-          <ul>
-            <li>Refer someone else.</li>
-            <li>We hire them.</li>
-            <li>You get £1,000.</li>
-            <li>Easy as that.</li>
-            <li><a class="border" href="#">Refer someone &#8594 </a></li>
-          </ul>
-        </div>
-      </article>
-      <img class="bottom-image" src="./images/sales-floor.jpg" alt="" />
-    </main>
-    <footer>
-      <ul>
-        <li>©2022 Alpha FX Group plc</li>
-        <li>Regulatory Info</li>
-        <li>Legal Notice</li>
-        <li>Privacy & Cookies</li>
-        <li>Developer Hub</li>
-        <li>Moder Slavery Statement</li>
-        <li>Fraud Awareness</li>
-        <li>Live Rates</li>
-        <li>Credits</li>
-      </ul>
-    </footer>
-  </body>
+        <form action="">
+          <legend>
+            Are you at a time in your life where you’re ready to commit to
+            increasing your learning and earning potential?
+          </legend>
+          <label class="form-control" >
+            <input type="radio" id="yes3" name="radio"  />
+            Yes
+          </label>
+
+          <label class="form-control">
+            <input type="radio" name="radio" />
+            No
+          </label>
+        </form>
+
+      </div>
+
+     <div class="submit-container">
+ <button class="button" type="submit"  onclick="location.href='https://form.typeform.com/to/cyKgXuOK?typeform-source=127.0.0.1';"   >
+         Submit 
+        </button>
+     </div>
+       
+      
+  
+      
+    </article>
+
+    <article class="refer">
+      <div class="refer_content">
+        <h1>Not right for you?</h1>
+        <ul>
+          <li>Refer someone else.</li>
+          <li>We hire them.</li>
+          <li>You get £1,000.</li>
+          <li>Easy as that.</li>
+          <li><a class="border" href="https://form.typeform.com/to/cyKgXuOK">Refer someone &#8594 </a></li>
+        </ul>
+      </div>
+    </article>
+
+    <img class="bottom-image" src="./images/sales-floor.jpg" alt="" />
+  </main>
+  <footer>
+    <ul>
+      <li>©2022 Alpha FX Group plc</li>
+      <li>Regulatory Info</li>
+      <li>Legal Notice</li>
+      <li>Privacy & Cookies</li>
+      <li>Developer Hub</li>
+      <li>Moder Slavery Statement</li>
+      <li>Fraud Awareness</li>
+      <li>Live Rates</li>
+      <li>Credits</li>
+    </ul>
+  </footer>
+</body>
+
+<script src="./script.js"></script>
 </html>
